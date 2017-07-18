@@ -1,0 +1,6 @@
+framework module Pods_Ibsattendance_swift {
+  umbrella header "Pods-Ibsattendance_swift-umbrella.h"
+
+  export *
+  module * { export * }
+}

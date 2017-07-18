@@ -1,0 +1,701 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		498941D54A5D535995425139 /* Pods_Ibsattendance_swiftTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EDF0E554BC050EF83BF965AB /* Pods_Ibsattendance_swiftTests.framework */; };
+		75917980F079EF6887A72BCD /* Pods_Ibsattendance_swift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ECC150A35F3B0297511E4AD1 /* Pods_Ibsattendance_swift.framework */; };
+		FFFED8821F1CB39E002E207E /* Ibsattendance_swiftTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFFED8811F1CB39E002E207E /* Ibsattendance_swiftTests.swift */; };
+		FFFED8AB1F1CB75E002E207E /* LWAttendanceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFFED88F1F1CB75D002E207E /* LWAttendanceViewController.swift */; };
+		FFFED8AC1F1CB75E002E207E /* LWBaseNavigationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFFED8911F1CB75D002E207E /* LWBaseNavigationViewController.swift */; };
+		FFFED8AD1F1CB75E002E207E /* LWBaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFFED8921F1CB75D002E207E /* LWBaseViewController.swift */; };
+		FFFED8AE1F1CB75E002E207E /* LWLoginStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FFFED8941F1CB75D002E207E /* LWLoginStoryboard.storyboard */; };
+		FFFED8AF1F1CB75E002E207E /* LWLoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFFED8951F1CB75D002E207E /* LWLoginViewController.swift */; };
+		FFFED8B01F1CB75E002E207E /* LWOAViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFFED8981F1CB75D002E207E /* LWOAViewController.swift */; };
+		FFFED8B11F1CB75E002E207E /* LWRegulationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFFED89A1F1CB75D002E207E /* LWRegulationViewController.swift */; };
+		FFFED8B21F1CB75E002E207E /* LWSetViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFFED89C1F1CB75D002E207E /* LWSetViewController.swift */; };
+		FFFED8B31F1CB75E002E207E /* LWSubordinateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFFED89E1F1CB75D002E207E /* LWSubordinateViewController.swift */; };
+		FFFED8B41F1CB75E002E207E /* LWHomeViewHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFFED8A11F1CB75D002E207E /* LWHomeViewHelper.swift */; };
+		FFFED8B51F1CB75E002E207E /* LWAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFFED8A31F1CB75D002E207E /* LWAPI.swift */; };
+		FFFED8B61F1CB75E002E207E /* LWNetworkCenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFFED8A41F1CB75D002E207E /* LWNetworkCenter.swift */; };
+		FFFED8B71F1CB75E002E207E /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = FFFED8A51F1CB75D002E207E /* Info.plist */; };
+		FFFED8B81F1CB75E002E207E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FFFED8A71F1CB75D002E207E /* Assets.xcassets */; };
+		FFFED8B91F1CB75E002E207E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFFED8AA1F1CB75E002E207E /* AppDelegate.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		FFFED87E1F1CB39E002E207E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FFFED8611F1CB39D002E207E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FFFED8681F1CB39D002E207E;
+			remoteInfo = Ibsattendance_swift;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		33068FCD0AA8F1D564EEF935 /* Pods-Ibsattendance_swiftTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Ibsattendance_swiftTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Ibsattendance_swiftTests/Pods-Ibsattendance_swiftTests.release.xcconfig"; sourceTree = "<group>"; };
+		3814E9DC52A6E56321CB8A98 /* Pods-Ibsattendance_swift.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Ibsattendance_swift.release.xcconfig"; path = "Pods/Target Support Files/Pods-Ibsattendance_swift/Pods-Ibsattendance_swift.release.xcconfig"; sourceTree = "<group>"; };
+		85DBF0DA8603D21B3D64930C /* Pods-Ibsattendance_swift.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Ibsattendance_swift.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Ibsattendance_swift/Pods-Ibsattendance_swift.debug.xcconfig"; sourceTree = "<group>"; };
+		ECC150A35F3B0297511E4AD1 /* Pods_Ibsattendance_swift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Ibsattendance_swift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EDF0E554BC050EF83BF965AB /* Pods_Ibsattendance_swiftTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Ibsattendance_swiftTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F1EE7F5A470B77CA2932C332 /* Pods-Ibsattendance_swiftTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Ibsattendance_swiftTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Ibsattendance_swiftTests/Pods-Ibsattendance_swiftTests.debug.xcconfig"; sourceTree = "<group>"; };
+		FFFED8691F1CB39D002E207E /* Ibsattendance_swift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Ibsattendance_swift.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FFFED87D1F1CB39E002E207E /* Ibsattendance_swiftTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Ibsattendance_swiftTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FFFED8811F1CB39E002E207E /* Ibsattendance_swiftTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ibsattendance_swiftTests.swift; sourceTree = "<group>"; };
+		FFFED8831F1CB39E002E207E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FFFED88F1F1CB75D002E207E /* LWAttendanceViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LWAttendanceViewController.swift; sourceTree = "<group>"; };
+		FFFED8911F1CB75D002E207E /* LWBaseNavigationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LWBaseNavigationViewController.swift; sourceTree = "<group>"; };
+		FFFED8921F1CB75D002E207E /* LWBaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LWBaseViewController.swift; sourceTree = "<group>"; };
+		FFFED8941F1CB75D002E207E /* LWLoginStoryboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LWLoginStoryboard.storyboard; sourceTree = "<group>"; };
+		FFFED8951F1CB75D002E207E /* LWLoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LWLoginViewController.swift; sourceTree = "<group>"; };
+		FFFED8981F1CB75D002E207E /* LWOAViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LWOAViewController.swift; sourceTree = "<group>"; };
+		FFFED89A1F1CB75D002E207E /* LWRegulationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LWRegulationViewController.swift; sourceTree = "<group>"; };
+		FFFED89C1F1CB75D002E207E /* LWSetViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LWSetViewController.swift; sourceTree = "<group>"; };
+		FFFED89E1F1CB75D002E207E /* LWSubordinateViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LWSubordinateViewController.swift; sourceTree = "<group>"; };
+		FFFED8A11F1CB75D002E207E /* LWHomeViewHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LWHomeViewHelper.swift; sourceTree = "<group>"; };
+		FFFED8A31F1CB75D002E207E /* LWAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LWAPI.swift; sourceTree = "<group>"; };
+		FFFED8A41F1CB75D002E207E /* LWNetworkCenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LWNetworkCenter.swift; sourceTree = "<group>"; };
+		FFFED8A51F1CB75D002E207E /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = ../Info.plist; sourceTree = "<group>"; };
+		FFFED8A71F1CB75D002E207E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		FFFED8A81F1CB75D002E207E /* Ibsattendance_swift.entitlements */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.entitlements; path = Ibsattendance_swift.entitlements; sourceTree = "<group>"; };
+		FFFED8AA1F1CB75E002E207E /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FFFED8661F1CB39D002E207E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				75917980F079EF6887A72BCD /* Pods_Ibsattendance_swift.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FFFED87A1F1CB39E002E207E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				498941D54A5D535995425139 /* Pods_Ibsattendance_swiftTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		01C34B9DEF6122EB93E6F6EE /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				ECC150A35F3B0297511E4AD1 /* Pods_Ibsattendance_swift.framework */,
+				EDF0E554BC050EF83BF965AB /* Pods_Ibsattendance_swiftTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A37B4BA186623A1C0C387B63 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				85DBF0DA8603D21B3D64930C /* Pods-Ibsattendance_swift.debug.xcconfig */,
+				3814E9DC52A6E56321CB8A98 /* Pods-Ibsattendance_swift.release.xcconfig */,
+				F1EE7F5A470B77CA2932C332 /* Pods-Ibsattendance_swiftTests.debug.xcconfig */,
+				33068FCD0AA8F1D564EEF935 /* Pods-Ibsattendance_swiftTests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		FFFED8601F1CB39D002E207E = {
+			isa = PBXGroup;
+			children = (
+				FFFED88C1F1CB75D002E207E /* Ibsattendance_swift */,
+				FFFED8801F1CB39E002E207E /* Ibsattendance_swiftTests */,
+				FFFED86A1F1CB39D002E207E /* Products */,
+				A37B4BA186623A1C0C387B63 /* Pods */,
+				01C34B9DEF6122EB93E6F6EE /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		FFFED86A1F1CB39D002E207E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FFFED8691F1CB39D002E207E /* Ibsattendance_swift.app */,
+				FFFED87D1F1CB39E002E207E /* Ibsattendance_swiftTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FFFED8801F1CB39E002E207E /* Ibsattendance_swiftTests */ = {
+			isa = PBXGroup;
+			children = (
+				FFFED8811F1CB39E002E207E /* Ibsattendance_swiftTests.swift */,
+				FFFED8831F1CB39E002E207E /* Info.plist */,
+			);
+			path = Ibsattendance_swiftTests;
+			sourceTree = "<group>";
+		};
+		FFFED88C1F1CB75D002E207E /* Ibsattendance_swift */ = {
+			isa = PBXGroup;
+			children = (
+				FFFED88D1F1CB75D002E207E /* Class */,
+				FFFED89F1F1CB75D002E207E /* Helper */,
+				FFFED8A61F1CB75D002E207E /* Resources */,
+				FFFED8A91F1CB75D002E207E /* Supporting Files */,
+			);
+			path = Ibsattendance_swift;
+			sourceTree = "<group>";
+		};
+		FFFED88D1F1CB75D002E207E /* Class */ = {
+			isa = PBXGroup;
+			children = (
+				FFFED88E1F1CB75D002E207E /* Attendance */,
+				FFFED8901F1CB75D002E207E /* Base */,
+				FFFED8931F1CB75D002E207E /* Login */,
+				FFFED8961F1CB75D002E207E /* Menu */,
+				FFFED8971F1CB75D002E207E /* OA */,
+				FFFED8991F1CB75D002E207E /* Regulation */,
+				FFFED89B1F1CB75D002E207E /* Settings */,
+				FFFED89D1F1CB75D002E207E /* Subordinate */,
+			);
+			path = Class;
+			sourceTree = "<group>";
+		};
+		FFFED88E1F1CB75D002E207E /* Attendance */ = {
+			isa = PBXGroup;
+			children = (
+				FFFED88F1F1CB75D002E207E /* LWAttendanceViewController.swift */,
+			);
+			path = Attendance;
+			sourceTree = "<group>";
+		};
+		FFFED8901F1CB75D002E207E /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				FFFED8911F1CB75D002E207E /* LWBaseNavigationViewController.swift */,
+				FFFED8921F1CB75D002E207E /* LWBaseViewController.swift */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		FFFED8931F1CB75D002E207E /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				FFFED8941F1CB75D002E207E /* LWLoginStoryboard.storyboard */,
+				FFFED8951F1CB75D002E207E /* LWLoginViewController.swift */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		FFFED8961F1CB75D002E207E /* Menu */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Menu;
+			sourceTree = "<group>";
+		};
+		FFFED8971F1CB75D002E207E /* OA */ = {
+			isa = PBXGroup;
+			children = (
+				FFFED8981F1CB75D002E207E /* LWOAViewController.swift */,
+			);
+			path = OA;
+			sourceTree = "<group>";
+		};
+		FFFED8991F1CB75D002E207E /* Regulation */ = {
+			isa = PBXGroup;
+			children = (
+				FFFED89A1F1CB75D002E207E /* LWRegulationViewController.swift */,
+			);
+			path = Regulation;
+			sourceTree = "<group>";
+		};
+		FFFED89B1F1CB75D002E207E /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				FFFED89C1F1CB75D002E207E /* LWSetViewController.swift */,
+			);
+			path = Settings;
+			sourceTree = "<group>";
+		};
+		FFFED89D1F1CB75D002E207E /* Subordinate */ = {
+			isa = PBXGroup;
+			children = (
+				FFFED89E1F1CB75D002E207E /* LWSubordinateViewController.swift */,
+			);
+			path = Subordinate;
+			sourceTree = "<group>";
+		};
+		FFFED89F1F1CB75D002E207E /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				FFFED8A01F1CB75D002E207E /* HomeViewHelper */,
+				FFFED8A21F1CB75D002E207E /* Networkhelper */,
+			);
+			path = Helper;
+			sourceTree = "<group>";
+		};
+		FFFED8A01F1CB75D002E207E /* HomeViewHelper */ = {
+			isa = PBXGroup;
+			children = (
+				FFFED8A11F1CB75D002E207E /* LWHomeViewHelper.swift */,
+			);
+			path = HomeViewHelper;
+			sourceTree = "<group>";
+		};
+		FFFED8A21F1CB75D002E207E /* Networkhelper */ = {
+			isa = PBXGroup;
+			children = (
+				FFFED8A31F1CB75D002E207E /* LWAPI.swift */,
+				FFFED8A41F1CB75D002E207E /* LWNetworkCenter.swift */,
+			);
+			path = Networkhelper;
+			sourceTree = "<group>";
+		};
+		FFFED8A61F1CB75D002E207E /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				FFFED8A71F1CB75D002E207E /* Assets.xcassets */,
+				FFFED8A81F1CB75D002E207E /* Ibsattendance_swift.entitlements */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		FFFED8A91F1CB75D002E207E /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				FFFED8A51F1CB75D002E207E /* Info.plist */,
+				FFFED8AA1F1CB75E002E207E /* AppDelegate.swift */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FFFED8681F1CB39D002E207E /* Ibsattendance_swift */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FFFED8861F1CB39E002E207E /* Build configuration list for PBXNativeTarget "Ibsattendance_swift" */;
+			buildPhases = (
+				C1E68F3FA8EDDC8AE3DEEFE6 /* [CP] Check Pods Manifest.lock */,
+				FFFED8651F1CB39D002E207E /* Sources */,
+				FFFED8661F1CB39D002E207E /* Frameworks */,
+				FFFED8671F1CB39D002E207E /* Resources */,
+				4E02D2946EB3AC8BF9B46223 /* [CP] Embed Pods Frameworks */,
+				04F312390ABCE437147C9178 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Ibsattendance_swift;
+			productName = Ibsattendance_swift;
+			productReference = FFFED8691F1CB39D002E207E /* Ibsattendance_swift.app */;
+			productType = "com.apple.product-type.application";
+		};
+		FFFED87C1F1CB39E002E207E /* Ibsattendance_swiftTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FFFED8891F1CB39E002E207E /* Build configuration list for PBXNativeTarget "Ibsattendance_swiftTests" */;
+			buildPhases = (
+				3434E94FCCD03A764C3BF4E6 /* [CP] Check Pods Manifest.lock */,
+				FFFED8791F1CB39E002E207E /* Sources */,
+				FFFED87A1F1CB39E002E207E /* Frameworks */,
+				FFFED87B1F1CB39E002E207E /* Resources */,
+				A28B6A746F896380193625C0 /* [CP] Embed Pods Frameworks */,
+				0259E2EE164AF6CE3ADDF6FF /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FFFED87F1F1CB39E002E207E /* PBXTargetDependency */,
+			);
+			name = Ibsattendance_swiftTests;
+			productName = Ibsattendance_swiftTests;
+			productReference = FFFED87D1F1CB39E002E207E /* Ibsattendance_swiftTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FFFED8611F1CB39D002E207E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0830;
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = "融商科技";
+				TargetAttributes = {
+					FFFED8681F1CB39D002E207E = {
+						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = 6822J5U78X;
+						ProvisioningStyle = Automatic;
+					};
+					FFFED87C1F1CB39E002E207E = {
+						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = 6822J5U78X;
+						ProvisioningStyle = Automatic;
+						TestTargetID = FFFED8681F1CB39D002E207E;
+					};
+				};
+			};
+			buildConfigurationList = FFFED8641F1CB39D002E207E /* Build configuration list for PBXProject "Ibsattendance_swift" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = FFFED8601F1CB39D002E207E;
+			productRefGroup = FFFED86A1F1CB39D002E207E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FFFED8681F1CB39D002E207E /* Ibsattendance_swift */,
+				FFFED87C1F1CB39E002E207E /* Ibsattendance_swiftTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FFFED8671F1CB39D002E207E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FFFED8B71F1CB75E002E207E /* Info.plist in Resources */,
+				FFFED8B81F1CB75E002E207E /* Assets.xcassets in Resources */,
+				FFFED8AE1F1CB75E002E207E /* LWLoginStoryboard.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FFFED87B1F1CB39E002E207E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0259E2EE164AF6CE3ADDF6FF /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Ibsattendance_swiftTests/Pods-Ibsattendance_swiftTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		04F312390ABCE437147C9178 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Ibsattendance_swift/Pods-Ibsattendance_swift-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3434E94FCCD03A764C3BF4E6 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		4E02D2946EB3AC8BF9B46223 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Ibsattendance_swift/Pods-Ibsattendance_swift-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A28B6A746F896380193625C0 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Ibsattendance_swiftTests/Pods-Ibsattendance_swiftTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C1E68F3FA8EDDC8AE3DEEFE6 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FFFED8651F1CB39D002E207E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FFFED8B91F1CB75E002E207E /* AppDelegate.swift in Sources */,
+				FFFED8AD1F1CB75E002E207E /* LWBaseViewController.swift in Sources */,
+				FFFED8B61F1CB75E002E207E /* LWNetworkCenter.swift in Sources */,
+				FFFED8B51F1CB75E002E207E /* LWAPI.swift in Sources */,
+				FFFED8B41F1CB75E002E207E /* LWHomeViewHelper.swift in Sources */,
+				FFFED8AF1F1CB75E002E207E /* LWLoginViewController.swift in Sources */,
+				FFFED8B31F1CB75E002E207E /* LWSubordinateViewController.swift in Sources */,
+				FFFED8AC1F1CB75E002E207E /* LWBaseNavigationViewController.swift in Sources */,
+				FFFED8B01F1CB75E002E207E /* LWOAViewController.swift in Sources */,
+				FFFED8B11F1CB75E002E207E /* LWRegulationViewController.swift in Sources */,
+				FFFED8B21F1CB75E002E207E /* LWSetViewController.swift in Sources */,
+				FFFED8AB1F1CB75E002E207E /* LWAttendanceViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FFFED8791F1CB39E002E207E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FFFED8821F1CB39E002E207E /* Ibsattendance_swiftTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		FFFED87F1F1CB39E002E207E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FFFED8681F1CB39D002E207E /* Ibsattendance_swift */;
+			targetProxy = FFFED87E1F1CB39E002E207E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		FFFED8841F1CB39E002E207E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		FFFED8851F1CB39E002E207E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		FFFED8871F1CB39E002E207E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 85DBF0DA8603D21B3D64930C /* Pods-Ibsattendance_swift.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				DEVELOPMENT_TEAM = 6822J5U78X;
+				INFOPLIST_FILE = Ibsattendance_swift/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.ronyun.Ibsattendance-swift";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		FFFED8881F1CB39E002E207E /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3814E9DC52A6E56321CB8A98 /* Pods-Ibsattendance_swift.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				DEVELOPMENT_TEAM = 6822J5U78X;
+				INFOPLIST_FILE = Ibsattendance_swift/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.ronyun.Ibsattendance-swift";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		FFFED88A1F1CB39E002E207E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F1EE7F5A470B77CA2932C332 /* Pods-Ibsattendance_swiftTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = 6822J5U78X;
+				INFOPLIST_FILE = Ibsattendance_swiftTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.ronyun.Ibsattendance-swiftTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Ibsattendance_swift.app/Ibsattendance_swift";
+			};
+			name = Debug;
+		};
+		FFFED88B1F1CB39E002E207E /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 33068FCD0AA8F1D564EEF935 /* Pods-Ibsattendance_swiftTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = 6822J5U78X;
+				INFOPLIST_FILE = Ibsattendance_swiftTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.ronyun.Ibsattendance-swiftTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Ibsattendance_swift.app/Ibsattendance_swift";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FFFED8641F1CB39D002E207E /* Build configuration list for PBXProject "Ibsattendance_swift" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FFFED8841F1CB39E002E207E /* Debug */,
+				FFFED8851F1CB39E002E207E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FFFED8861F1CB39E002E207E /* Build configuration list for PBXNativeTarget "Ibsattendance_swift" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FFFED8871F1CB39E002E207E /* Debug */,
+				FFFED8881F1CB39E002E207E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FFFED8891F1CB39E002E207E /* Build configuration list for PBXNativeTarget "Ibsattendance_swiftTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FFFED88A1F1CB39E002E207E /* Debug */,
+				FFFED88B1F1CB39E002E207E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = FFFED8611F1CB39D002E207E /* Project object */;
+}
