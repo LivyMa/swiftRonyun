@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.17" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="yUO-E8-vut">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="yUO-E8-vut">
     <device id="retina4_0" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.14"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -81,6 +81,9 @@
                                     <action selector="loginButtonClick:" destination="yUO-E8-vut" eventType="touchUpInside" id="Ngo-Gb-Izs"/>
                                 </connections>
                             </button>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="xnC-7H-i66">
+                                <rect key="frame" x="285" y="175" width="20" height="20"/>
+                            </activityIndicatorView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -90,6 +93,8 @@
                             <constraint firstItem="bqi-KN-DwR" firstAttribute="centerX" secondItem="n6h-IP-6PQ" secondAttribute="centerX" id="AvI-e7-g51"/>
                             <constraint firstItem="8a0-QU-gAc" firstAttribute="top" secondItem="MMi-oF-QlM" secondAttribute="bottom" constant="20" id="Dh7-Ks-v2M"/>
                             <constraint firstAttribute="trailing" secondItem="MMi-oF-QlM" secondAttribute="trailing" constant="20" id="EEw-aZ-XxK"/>
+                            <constraint firstItem="xnC-7H-i66" firstAttribute="centerY" secondItem="8a0-QU-gAc" secondAttribute="centerY" id="FrW-gw-nWh"/>
+                            <constraint firstItem="xnC-7H-i66" firstAttribute="leading" secondItem="n6h-IP-6PQ" secondAttribute="trailing" constant="15" id="JFr-tb-Q4c"/>
                             <constraint firstItem="4XI-MR-OWo" firstAttribute="top" secondItem="gfd-WP-6su" secondAttribute="bottom" constant="8" id="O0g-la-CwA"/>
                             <constraint firstItem="lw6-tc-V9Z" firstAttribute="top" secondItem="n6h-IP-6PQ" secondAttribute="bottom" constant="5" id="Pm2-x9-LR0"/>
                             <constraint firstItem="8a0-QU-gAc" firstAttribute="leading" secondItem="XF6-4b-L3F" secondAttribute="leading" constant="50" id="Q27-Gq-7jB"/>
@@ -111,10 +116,11 @@
                     <navigationItem key="navigationItem" title="注册激活" id="1dF-fK-z8w"/>
                     <connections>
                         <outlet property="codeTextField" destination="n6h-IP-6PQ" id="Kdk-7a-Fbe"/>
+                        <outlet property="landingView" destination="xnC-7H-i66" id="kp5-2l-AYV"/>
                         <outlet property="loginButton" destination="bqi-KN-DwR" id="3g4-Ml-43h"/>
                         <outlet property="promptLabel" destination="lw6-tc-V9Z" id="CqH-sW-e7f"/>
-                        <segue destination="w1d-2u-RHc" kind="show" id="qlk-vg-M5N"/>
-                        <segue destination="EmQ-1p-1Pa" kind="show" id="h8o-xb-Jgg"/>
+                        <segue destination="w1d-2u-RHc" kind="show" identifier="loginError" id="qlk-vg-M5N"/>
+                        <segue destination="EmQ-1p-1Pa" kind="show" identifier="loginDone" id="h8o-xb-Jgg"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0Gd-0q-lIv" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -137,7 +143,7 @@
                                 <rect key="frame" x="90" y="50" width="140" height="31"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wIl-gs-w0u">
-                                <rect key="frame" x="81.5" y="131" width="157" height="32"/>
+                                <rect key="frame" x="80" y="131" width="160" height="32"/>
                                 <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="26"/>
                                 <state key="normal" title="    注册失败!" image="login_error">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -209,7 +215,7 @@
                                 <rect key="frame" x="90" y="50" width="140" height="31"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WGg-1i-e6R">
-                                <rect key="frame" x="77.5" y="131" width="165" height="32"/>
+                                <rect key="frame" x="76" y="131" width="168" height="32"/>
                                 <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="26"/>
                                 <state key="normal" title="    注册成功!" image="login_true">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
