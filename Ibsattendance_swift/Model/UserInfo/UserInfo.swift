@@ -34,6 +34,14 @@ class UserInfo: NSObject {
     
     // 常用短语
     var REMARKS: Array<String>?
+
+    override func setClasstype() -> Dictionary<String, Any>? {
+        return [
+            "STAFFINFO" : "RSStaffinfo",
+            "GPS" : "<GPS>",
+        ]
+    }
+    
 }
 
 

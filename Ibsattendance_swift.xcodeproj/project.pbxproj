@@ -13,6 +13,8 @@
 		FF847D231F2082FF00B6D4A4 /* UserInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF847D221F2082FF00B6D4A4 /* UserInfo.swift */; };
 		FF847D271F2086BD00B6D4A4 /* LWModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF847D261F2086BD00B6D4A4 /* LWModel.swift */; };
 		FF847D291F2087F700B6D4A4 /* NSObjct+LWModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF847D281F2087F700B6D4A4 /* NSObjct+LWModel.swift */; };
+		FF99207E1F2B244A00DFB16E /* LWClassinfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF99207D1F2B244A00DFB16E /* LWClassinfo.swift */; };
+		FF9EA3EA1F2588260002CC70 /* LWLoginErrorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF9EA3E91F2588260002CC70 /* LWLoginErrorViewController.swift */; };
 		FFAB988F1F1EF686009A021B /* LWDeviceInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFAB988E1F1EF686009A021B /* LWDeviceInfo.swift */; };
 		FFFED8821F1CB39E002E207E /* Ibsattendance_swiftTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFFED8811F1CB39E002E207E /* Ibsattendance_swiftTests.swift */; };
 		FFFED8AB1F1CB75E002E207E /* LWAttendanceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFFED88F1F1CB75D002E207E /* LWAttendanceViewController.swift */; };
@@ -53,6 +55,8 @@
 		FF847D221F2082FF00B6D4A4 /* UserInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserInfo.swift; sourceTree = "<group>"; };
 		FF847D261F2086BD00B6D4A4 /* LWModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LWModel.swift; sourceTree = "<group>"; };
 		FF847D281F2087F700B6D4A4 /* NSObjct+LWModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSObjct+LWModel.swift"; sourceTree = "<group>"; };
+		FF99207D1F2B244A00DFB16E /* LWClassinfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LWClassinfo.swift; sourceTree = "<group>"; };
+		FF9EA3E91F2588260002CC70 /* LWLoginErrorViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LWLoginErrorViewController.swift; sourceTree = "<group>"; };
 		FFAB988E1F1EF686009A021B /* LWDeviceInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LWDeviceInfo.swift; sourceTree = "<group>"; };
 		FFFED8691F1CB39D002E207E /* Ibsattendance_swift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Ibsattendance_swift.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FFFED87D1F1CB39E002E207E /* Ibsattendance_swiftTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Ibsattendance_swiftTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -122,6 +126,7 @@
 				FF847D221F2082FF00B6D4A4 /* UserInfo.swift */,
 				FF847D261F2086BD00B6D4A4 /* LWModel.swift */,
 				FF847D281F2087F700B6D4A4 /* NSObjct+LWModel.swift */,
+				FF99207D1F2B244A00DFB16E /* LWClassinfo.swift */,
 			);
 			path = UserInfo;
 			sourceTree = "<group>";
@@ -221,6 +226,7 @@
 			children = (
 				FFFED8941F1CB75D002E207E /* LWLoginStoryboard.storyboard */,
 				FFFED8951F1CB75D002E207E /* LWLoginViewController.swift */,
+				FF9EA3E91F2588260002CC70 /* LWLoginErrorViewController.swift */,
 			);
 			path = Login;
 			sourceTree = "<group>";
@@ -525,11 +531,13 @@
 				FFFED8B31F1CB75E002E207E /* LWSubordinateViewController.swift in Sources */,
 				FFFED8AC1F1CB75E002E207E /* LWBaseNavigationViewController.swift in Sources */,
 				FFFED8B01F1CB75E002E207E /* LWOAViewController.swift in Sources */,
+				FF9EA3EA1F2588260002CC70 /* LWLoginErrorViewController.swift in Sources */,
 				FFFED8B11F1CB75E002E207E /* LWRegulationViewController.swift in Sources */,
 				FF847D271F2086BD00B6D4A4 /* LWModel.swift in Sources */,
 				FFFED8B21F1CB75E002E207E /* LWSetViewController.swift in Sources */,
 				FF847D231F2082FF00B6D4A4 /* UserInfo.swift in Sources */,
 				FFFED8AB1F1CB75E002E207E /* LWAttendanceViewController.swift in Sources */,
+				FF99207E1F2B244A00DFB16E /* LWClassinfo.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

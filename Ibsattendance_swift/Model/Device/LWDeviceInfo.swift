@@ -40,7 +40,8 @@ class LWDeviceInfo: NSObject {
     
     // 设备唯一标识
     let clid : String = {
-        let uuid : String = (UIDevice.current.identifierForVendor?.uuidString)!
+        var uuid : String = (UIDevice.current.identifierForVendor?.uuidString)!
+        uuid = "64620F744B6A40FEB888EB95B40B3243"
         return uuid.replacingOccurrences(of: "-", with: "")
     }()
 

@@ -20,6 +20,7 @@ class LWLoginViewController: LWBaseViewController, UITextFieldDelegate {
     @IBOutlet var loginButton: UIButton!
     @IBOutlet var landingView: UIActivityIndicatorView!
     
+    var errorCode: String?
     
     
     
@@ -28,6 +29,11 @@ class LWLoginViewController: LWBaseViewController, UITextFieldDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         setUI()
+        
+        if let dict =  UserDefaults.standard.object(forKey: "UserInfo") {
+            let userInfo: UserInfo = UserInfo.lw_model(dict: dict as! Dictionary<String, Any>) as! UserInfo
+            print(userInfo.PK ?? "没有数据")
+        }
     }
     
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
@@ -80,18 +86,14 @@ class LWLoginViewController: LWBaseViewController, UITextFieldDelegate {
             
             if let base64Str = response.data {
             let data = Data.init(base64Encoded: base64Str)
-                
-            if  let dict: Dictionary = try? JSONSerialization.jsonObject(with: data!, options: []) as! Dictionary<String, Any> {
-                if let error: String = dict["ERROR"] as? String{
-                    let errorStr = LWErrorCode.errorCode(errorCode: ErrorCode(rawValue: Int(error)!)!)
-                    print(errorStr)
-                }else {
-                    UserDefaults.standard.set(dict, forKey: "UserInfo")
-                    print(UserDefaults.standard.object(forKey: "UserInfo") ?? "空数据")
+                if  let dict: Dictionary = try? JSONSerialization.jsonObject(with: data!, options: []) as! Dictionary<String, Any> {
+                    if let error: String = dict["ERROR"] as? String{
+                        let errorStr = LWErrorCode.errorCode(errorCode: ErrorCode(rawValue: Int(error)!)!)
+                        print(errorStr)
+                    }else {
+                        UserDefaults.standard.set(dict, forKey: "UserInfo")
+                    }
                 }
-                
-            }
-        
             }else {
                 print(response.error ?? "not error")
             }
@@ -104,7 +106,7 @@ class LWLoginViewController: LWBaseViewController, UITextFieldDelegate {
     }
     
     func regular(code: String) -> Bool {
-        let regularStr = "^[0-9a-zA-Z]${6}"
+        let regularStr = "^[0-9a-zA-Z]$"
         let results = try!NSRegularExpression(pattern: regularStr, options: .caseInsensitive)
         let res = results.matches(in: code,
                                   options: .reportProgress,
@@ -118,9 +120,16 @@ class LWLoginViewController: LWBaseViewController, UITextFieldDelegate {
     // 跳转页面
     func pushViewController(code: Int) {
         if let errorCode: ErrorCode = ErrorCode(rawValue: code) {
+            self.errorCode = LWErrorCode.errorCode(errorCode: errorCode)
             self.shouldPerformSegue(withIdentifier: "loginError", sender: self)
         }else {
             self.shouldPerformSegue(withIdentifier: "loginDone", sender: self)
+        }
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if let controller: LWLoginErrorViewController = segue.destination as? LWLoginErrorViewController {
+            controller.errorCode = self.errorCode ?? nil
         }
     }
     
@@ -149,6 +158,7 @@ class LWLoginViewController: LWBaseViewController, UITextFieldDelegate {
         if textField.text!.characters.count >= codeLength && string.characters.count > 0 {
             return false
         }
+        
         if string.characters.count > 0 {
             if textField.text!.characters.count + 1 == codeLength {
                 loginButton.isEnabled = true
